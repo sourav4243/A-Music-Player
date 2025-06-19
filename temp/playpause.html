@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bouncy Play-Pause Transition</title>
+  <style>
+    .play-song,
+    .pause-song {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 
+        opacity 0.4s ease,
+        transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* spring bounce */
+    }
+
+    .pause-song {
+      filter: invert(1);
+    }
+
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.3);
+    }
+
+    .visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1);
+    }
+
+    .container {
+      position: relative;
+      height: 60px;
+      width: 60px;
+      background-color: #1f1f1f;
+      padding: 5px;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container:hover {
+      box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="assets/play.svg" alt="play icon" class="play-song visible" />
+    <img src="assets/pause.svg" alt="pause icon" class="pause-song hidden" />
+  </div>
+
+  <script>
+    const playSong = document.querySelector(".play-song");
+    const pauseSong = document.querySelector(".pause-song");
+
+    playSong.addEventListener("click", function () {
+      playSong.classList.remove("visible");
+      playSong.classList.add("hidden");
+
+      pauseSong.classList.remove("hidden");
+      pauseSong.classList.add("visible");
+    });
+
+    pauseSong.addEventListener("click", function () {
+      pauseSong.classList.remove("visible");
+      pauseSong.classList.add("hidden");
+
+      playSong.classList.remove("hidden");
+      playSong.classList.add("visible");
+    });
+  </script>
+</body>
+</html>
