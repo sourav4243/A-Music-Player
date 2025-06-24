@@ -153,7 +153,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    overflow-y: auto;
 }
 
 .card {
@@ -299,7 +298,7 @@ body {
 
 
 .cardContainer{
-    max-height: calc(77vh - 16px);
+    max-height: calc(67vh - 16px);
     overflow-y: scroll;
 }
 
