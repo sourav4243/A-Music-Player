@@ -88,9 +88,9 @@ body {
 }
 
 .library {
-    min-height: 50vh;
+    min-height: 40vh;
     position: relative;
-    height: 78vh;
+    height: 70vh;
 }
 
 .footer {
