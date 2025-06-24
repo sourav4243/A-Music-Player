@@ -36,7 +36,7 @@ library/
 
 Each folder inside the `library/` acts as a **playlist**, and its name (e.g., `chill-vibes`) is used as the title of a card on the homepage. Songs in that folder appear inside the playlist.
 
-> ℹ️ If you add new songs to an existing folder and they don’t appear instantly, try refreshing the page or clearing the cache to reload the latest contents.
+> ℹ️ If you add new songs to an existing folder and they don’t appear instantly, try refreshing the page or clearing the cache of that playlist using button provided for each playlist card to reload the latest contents.
 
 ## 🛠️ How to Use
 
