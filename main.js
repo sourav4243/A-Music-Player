@@ -13,7 +13,7 @@ let currentFolder;
 async function getSongs(folder) {
     songDetails=[];
     allHref=[];
-    let a = await fetch(`http://127.0.0.1:5500/library/${folder}/`);
+    let a = await fetch(`/library/${folder}/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -317,7 +317,7 @@ handleNextPrevious();
 
 
 async function getFolderNames() {
-    let a = await fetch("http://127.0.0.1:5500/library/");
+    let a = await fetch("/library/");
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
