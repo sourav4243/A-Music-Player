@@ -14,7 +14,11 @@ This project offers a clean, modern interface for playing your **offline MP3 fil
 - 🔄 **No backend or database** – fully frontend  
 - 🌐 **Optional metadata fetching** if connected to Wi-Fi  
 - 💾 Uses browser **localStorage**  
-- 📱 **Responsive design** – works on mobile & desktop  
+- 📱 **Responsive design** – works on mobile & desktop
+
+## Demo Video of Application:
+https://github.com/user-attachments/assets/959866c5-2468-486c-b9fb-38c382d4dfe0
+
 
 ## 📂 Folder Structure
 
