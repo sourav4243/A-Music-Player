@@ -153,6 +153,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    overflow-y: auto;
 }
 
 .card {
